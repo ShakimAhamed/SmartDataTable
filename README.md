@@ -4,9 +4,9 @@ A high-performance, scalable data table built with modern Angular features, desi
 
 ---
 
-<!-- ## 🔗 Live Demo
+## 🔗 Live Demo
 
-👉 https://your-netlify-link -->
+👉 https://smartdatatable.netlify.app
 
 ## 📂 GitHub Repository
 
