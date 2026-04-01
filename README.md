@@ -1,59 +1,106 @@
-# SmartDataTable
+# 🚀 Smart Data Table (Angular 17+)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.5.
+A high-performance, scalable data table built with modern Angular features, designed to efficiently handle large datasets (10,000+ rows) with smooth rendering and responsive UI.
 
-## Development server
+---
 
-To start a local development server, run:
+## 🔗 Live Demo
+
+👉 https://your-netlify-link
+
+## 📂 GitHub Repository
+
+👉 https://github.com/ShakimAhamed/SmartDataTable
+
+---
+
+## 📖 Overview
+
+This project demonstrates how to build a performant and scalable frontend application using **modern Angular architecture**. It focuses on optimizing rendering performance, managing state reactively, and building reusable UI components.
+
+The application simulates a real-world enterprise scenario where large datasets must be displayed and manipulated efficiently.
+
+---
+
+## ✨ Key Features
+
+- ⚡ **High Performance Rendering**
+  - Virtual scrolling using Angular CDK
+  - Efficient DOM updates with `trackBy`
+  - Optimized change detection using `OnPush`
+
+- 🔁 **Reactive State Management (Signals)**
+  - `signal()` for state
+  - `computed()` for derived data (filtering, sorting, pagination)
+  - `effect()` for side effects
+
+- 🔍 **Advanced Data Handling**
+  - Client-side filtering (search)
+  - Dynamic sorting (ID, Name, Value)
+  - Pagination with configurable page size
+
+- 🎨 **Modern UI**
+  - Responsive layout using Tailwind CSS
+  - Clean and minimal design
+  - Interactive table with hover states
+
+- 🔗 **RxJS Integration**
+  - Demonstrates interoperability using `toSignal()`
+
+---
+
+## 🧠 Architecture & Design Decisions
+
+### 🔹 Signals-Based State Management
+
+Instead of relying solely on RxJS or external libraries, this project uses Angular Signals for:
+
+- Simpler state handling
+- Automatic UI updates
+- Reduced boilerplate
+
+### 🔹 Performance Optimization Strategy
+
+To handle large datasets:
+
+- Virtual scrolling limits DOM nodes
+- `OnPush` reduces unnecessary change detection cycles
+- `trackBy` prevents full re-renders
+
+### 🔹 Separation of Concerns
+
+- `data.service.ts` → Data generation / API simulation
+- `table.store.ts` → State management (signals)
+- `app.component.ts` → UI interaction logic
+
+---
+
+## 🛠️ Tech Stack
+
+- **Angular 17+ (Standalone Components)**
+- **TypeScript**
+- **Angular CDK (Virtual Scroll)**
+- **RxJS**
+- **Tailwind CSS**
+
+---
+
+## 📊 Performance Considerations
+
+This application is optimized for performance:
+
+- Handles **10,000+ rows** smoothly
+- Minimizes DOM rendering using virtual scroll
+- Avoids unnecessary re-renders with `OnPush`
+- Uses computed signals to efficiently derive state
+
+---
+
+## ▶️ Getting Started
+
+### 1. Clone the repository
 
 ```bash
-ng serve
+git clone https://github.com/ShakimAhamed/SmartDataTable.git
+cd smart-data-table
 ```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
