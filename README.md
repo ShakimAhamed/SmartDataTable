@@ -4,9 +4,9 @@ A high-performance, scalable data table built with modern Angular features, desi
 
 ---
 
-## 🔗 Live Demo
+<!-- ## 🔗 Live Demo
 
-👉 https://your-netlify-link
+👉 https://your-netlify-link -->
 
 ## 📂 GitHub Repository
 
@@ -71,7 +71,7 @@ To handle large datasets:
 
 - `data.service.ts` → Data generation / API simulation
 - `table.store.ts` → State management (signals)
-- `app.component.ts` → UI interaction logic
+- `app.ts` → UI interaction logic
 
 ---
 
